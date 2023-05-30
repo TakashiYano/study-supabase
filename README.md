@@ -1,4 +1,4 @@
-# Next.js starter template.
+# study-supabase
 
 - Next.js
 - TypeScript
@@ -6,3 +6,4 @@
 - Prettier
 - Jest
 - Tailwind CSS
+- Supabase
