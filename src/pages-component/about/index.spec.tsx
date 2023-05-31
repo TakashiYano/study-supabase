@@ -4,12 +4,12 @@
 
 import { render, screen } from "@testing-library/react";
 
-import { Index } from "./";
+import { About } from "./page";
 
-describe("Index", () => {
+describe("About", () => {
   it("renders a heading", () => {
-    render(<Index />);
-    const heading = screen.getByRole("heading", { name: /Index/i });
+    render(<About />);
+    const heading = screen.getByRole("heading", { name: /About/i });
     expect(heading).toBeInTheDocument();
   });
 });

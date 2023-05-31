@@ -1,12 +1,10 @@
 import type { CustomLayout } from "next";
 
-import { Footer } from "./Footer";
-import { Header } from "./Header";
-import { LayoutErrorBoundary } from "./LayoutErrorBoundary";
+import { Footer } from "../Footer";
+import { Header } from "../Header";
+import { LayoutErrorBoundary } from "../LayoutErrorBoundary";
 
-/**
- * @package
- */
+/** @package */
 export const FluidLayout: CustomLayout = (page) => {
   return (
     <div className="flex min-h-screen flex-col">

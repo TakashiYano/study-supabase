@@ -1,3 +1,4 @@
+/** @package */
 export const pagesPath = {
   "about": {
     $url: (url?: { hash?: string }) => ({ pathname: '/about' as const, hash: url?.hash })

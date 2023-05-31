@@ -6,9 +6,7 @@ import { cloneElement } from "react";
 
 type Props = LinkProps & { children: ReactElement; activeClassName: string };
 
-/**
- * @package
- */
+/** @package */
 export const NavLink: FC<Props> = ({
   activeClassName,
   children,

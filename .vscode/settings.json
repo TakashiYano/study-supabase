@@ -1,12 +1,14 @@
 {
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "css.validate": false,
-  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+  "editor.codeActionsOnSave": [
+    "source.fixAll.eslint",
+    "source.addMissingImports"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.formatOnType": true,
   "editor.quickSuggestions": { "strings": true },
+  "eslint.workingDirectories": [{ "mode": "auto" }],
   "files.encoding": "utf8",
   "files.eol": "\n",
   "typescript.preferences.importModuleSpecifier": "non-relative",

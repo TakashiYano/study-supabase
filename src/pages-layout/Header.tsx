@@ -1,6 +1,6 @@
 import type { FC } from "react";
-import { NavLink } from "src/component/Button";
-import { pagesPath } from "src/lib/$path";
+import { pagesPath } from "src/lib/const";
+import { NavLink } from "src/lib/next";
 
 const items = [
   { href: pagesPath.$url().pathname, label: "Root" },

@@ -6,7 +6,7 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
-  eslint: { dirs: ["src"] },
+  eslint: { dirs: ["./src"] },
 };
 
 export default nextConfig;

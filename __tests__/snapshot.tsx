@@ -1,7 +1,7 @@
 import renderer from "react-test-renderer";
+import IndexPage from "src/pages";
+import AboutPage from "src/pages/about";
 
-import AboutPage from "../pages/about";
-import IndexPage from "../pages/index";
 
 it("renders index unchanged", () => {
   const tree = renderer.create(<IndexPage />).toJSON();
