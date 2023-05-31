@@ -1,5 +1,7 @@
 import type { FC } from "react";
+import { LogoutButton, SignInGithub } from "src/component/Button";
 import { pagesPath } from "src/lib/const";
+import { useAuth } from "src/lib/hooks";
 import { NavLink } from "src/lib/next";
 
 const items = [
@@ -7,12 +9,13 @@ const items = [
   { href: pagesPath.about.$url().pathname, label: "About" },
 ];
 
-/**
- * @package
- */
+/** @package */
 export const Header: FC = () => {
+  const { session: isLogin } = useAuth();
+
   return (
     <div>
+      {isLogin ? <LogoutButton /> : <SignInGithub />}
       <h1>Title</h1>
       <nav>
         {items.map(({ href, label }) => {
