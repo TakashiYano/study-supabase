@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { LogoutButton, SignInGithub } from "src/component/Button";
+import { LogoutButton } from "src/component/Button";
 import { pagesPath } from "src/lib/const";
 import { NavLink } from "src/lib/next";
 import { useAuth } from "src/lib/user";
@@ -15,8 +15,10 @@ export const Header: FC = () => {
 
   return (
     <div>
-      {isLogin ? <LogoutButton /> : <SignInGithub />}
-      <h1>Title</h1>
+      <div className="flex justify-between">
+        <h1>Title</h1>
+        {isLogin && <LogoutButton />}
+      </div>
       <nav>
         {items.map(({ href, label }) => {
           return (

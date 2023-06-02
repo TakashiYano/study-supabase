@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import type { FC } from "react";
 import { useEffect, useState } from "react";
 import type { Database } from "src/lib/supabase";
@@ -16,12 +16,12 @@ export const Chat: FC = () => {
   const [inputText, setInputText] = useState(""); // 入力テキスト
   const [messageText, setMessageText] = useState<Database[]>([]); // メッセージ
   const { profileFromGithub, session: isLogin } = useAuth();
-  // const router = useRouter();
+  const router = useRouter();
 
   // ログアウト済みの場合はログインページにリダイレクト
-  // if (!isLogin) {
-  //   router.push("/");
-  // }
+  if (!isLogin) {
+    router.push("/");
+  }
 
   // リアルタイムデータ更新
   const fetchRealtimeData = () => {
@@ -122,20 +122,18 @@ export const Chat: FC = () => {
         );
       })}
 
-      {isLogin ? (
-        <form onSubmit={onSubmitNewMessage}>
-          <input
-            type="text"
-            name="message"
-            value={inputText}
-            onChange={onChangeInputText}
-            aria-label="新規メッセージを入力"
-          />
-          <button type="submit" disabled={inputText === ""}>
-            送信
-          </button>
-        </form>
-      ) : null}
+      <form onSubmit={onSubmitNewMessage}>
+        <input
+          type="text"
+          name="message"
+          value={inputText}
+          onChange={onChangeInputText}
+          aria-label="新規メッセージを入力"
+        />
+        <button type="submit" disabled={inputText === ""}>
+          送信
+        </button>
+      </form>
     </div>
   );
 };

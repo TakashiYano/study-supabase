@@ -1,11 +1,10 @@
 import type { FC } from "react";
+import { SignInGithub } from "src/component/Button";
 import { Chat } from "src/component/Chat";
+import { useAuth } from "src/lib/user";
 
 export const Index: FC = () => {
-  return (
-    <div>
-      <h2>チャット</h2>
-      <Chat />
-    </div>
-  );
+  const { session: isLogin } = useAuth();
+
+  return isLogin ? <Chat /> : <SignInGithub />;
 };
