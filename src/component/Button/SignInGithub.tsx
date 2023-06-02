@@ -1,4 +1,4 @@
-import { useAuth } from "src/lib/hooks";
+import { useAuth } from "src/lib/user";
 
 /** @package */
 export const SignInGithub = () => {

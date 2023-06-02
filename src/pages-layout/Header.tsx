@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import { LogoutButton, SignInGithub } from "src/component/Button";
 import { pagesPath } from "src/lib/const";
-import { useAuth } from "src/lib/hooks";
 import { NavLink } from "src/lib/next";
+import { useAuth } from "src/lib/user";
 
 const items = [
   { href: pagesPath.$url().pathname, label: "Root" },
