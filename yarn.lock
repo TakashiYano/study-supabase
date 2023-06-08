@@ -2422,14 +2422,13 @@ eslint-plugin-sort-destructure-keys@1.5.0:
   dependencies:
     natural-compare-lite "^1.4.0"
 
-eslint-plugin-tailwindcss@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-3.6.0.tgz#b29605a53b5c27b7e74986ca7fcc0c6bdc435ad3"
-  integrity sha512-gWLGNWHuhh5ngwkJ2sgSByanpRw2s5GdrM2ff2/w8Ho2mWh2MyGvpnFZpL4b0XT/C0WF9zlq57+vFHJOeFhMkg==
+eslint-plugin-tailwindcss@3.12.1:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-3.12.1.tgz#ab7fc554b97872208460aac6921f391683c992f1"
+  integrity sha512-LyIRV0rx6prTpJZsSCXSNJ34Yry3Nj9OJwvzh1xTsiG6+UCnAPW1Bx41s7vZzUDKMlwFgpUN9Me+NK12T4DHYg==
   dependencies:
     fast-glob "^3.2.5"
     postcss "^8.4.4"
-    tailwindcss "^3.1.3"
 
 eslint-plugin-testing-library@5.6.0:
   version "5.6.0"
@@ -5187,7 +5186,7 @@ symbol-tree@^3.2.4:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-tailwindcss@3.1.8, tailwindcss@^3.1.3:
+tailwindcss@3.1.8:
   version "3.1.8"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.1.8.tgz#4f8520550d67a835d32f2f4021580f9fddb7b741"
   integrity sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==
