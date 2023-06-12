@@ -5,7 +5,7 @@ import type { FC } from "react";
  */
 export const Footer: FC = () => {
   return (
-    <div>
+    <div className="p-4">
       <small>&copy; 20xx example</small>
     </div>
   );

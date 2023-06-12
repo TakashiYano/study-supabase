@@ -8,13 +8,13 @@ import { LayoutErrorBoundary } from "../LayoutErrorBoundary";
 export const FluidLayout: CustomLayout = (page) => {
   return (
     <div className="flex min-h-screen flex-col">
-      <header>
+      <header className="bg-cyan-9">
         <Header />
       </header>
-      <main className="flex-1 bg-red-300">
+      <main className="flex-1 bg-cyan-2">
         <LayoutErrorBoundary>{page}</LayoutErrorBoundary>
       </main>
-      <footer>
+      <footer className="bg-cyan-9">
         <Footer />
       </footer>
     </div>
